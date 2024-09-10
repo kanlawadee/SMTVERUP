@@ -1,0 +1,94 @@
+.order-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* เพิ่มระยะห่างระหว่าง header (ปุ่มเพิ่ม) กับช่องค้นหา */
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* คอนเทนเนอร์สำหรับ DatePicker สองตัวให้อยู่ในบรรทัดเดียวกัน */
+.datepickers-container {
+  display: flex;
+  gap: 20px; /* เพิ่มระยะห่างระหว่าง DatePicker */
+}
+
+.datepickers-container .MuiTextField-root {
+  width: 100%; /* ให้ DatePicker แต่ละตัวกว้างเต็มที่ */
+}
+
+.order-list {
+  margin-top: 20px;
+}
+
+.order-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flexbox layout for equal column widths */
+.order-header, .order-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-header span, .order-status span {
+  flex: 1; /* Make each item take equal space */
+  text-align: left; /* Align text to the left */
+}
+
+/* Adjusting margins and padding for uniform layout */
+.order-customer {
+  margin-top: 5px;
+}
+
+.order-status {
+  margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.delete-btn {
+  color: red;
+}
